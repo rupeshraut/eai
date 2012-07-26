@@ -39,6 +39,21 @@ public class JAXBRepository {
 	/** The Constant OBJECT_FACTORY. */
 	private static final ObjectFactory OBJECT_FACTORY = new ObjectFactory();
 
+	/** The jaxb context. */
+	private static JAXBContext jaxbContext;
+
+	/** The marshaller. */
+	private static Marshaller marshaller;
+
+	static {
+		try {
+			jaxbContext = JAXBContext.newInstance(ObjectFactory.class);
+			marshaller = jaxbContext.createMarshaller();
+		} catch (JAXBException e) {
+			LOGGER.error("error occurred while creating JAXB marshaller", e);
+		}// try-catch
+	}// static
+
 	/**
 	 * The main method.
 	 * 
@@ -92,9 +107,6 @@ public class JAXBRepository {
 			routingContextType.setMessageId(uuid.toString());
 			final JAXBElement<RoutingContextType> requestElement = OBJECT_FACTORY.createRoutingContext(routingContextType);
 
-			final JAXBContext jaxbContext = JAXBContext.newInstance(ObjectFactory.class);
-			final Marshaller marshaller = jaxbContext.createMarshaller();
-			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 			marshaller.marshal(requestElement, stringWriter);
 		} finally {
 			IOUtils.closeQuietly(stringWriter);
@@ -106,6 +118,8 @@ public class JAXBRepository {
 	/**
 	 * Creates the request.
 	 * 
+	 * @param inSymbol
+	 *            the in symbol
 	 * @return the string
 	 * @throws JAXBException
 	 *             the jAXB exception
@@ -122,10 +136,8 @@ public class JAXBRepository {
 
 			final JAXBElement<RequestType> requestElement = OBJECT_FACTORY.createRequest(requestType);
 
-			final JAXBContext jaxbContext = JAXBContext.newInstance(ObjectFactory.class);
-			final Marshaller marshaller = jaxbContext.createMarshaller();
-			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 			marshaller.marshal(requestElement, stringWriter);
+
 		} finally {
 			IOUtils.closeQuietly(stringWriter);
 		}// finally
@@ -136,6 +148,8 @@ public class JAXBRepository {
 	/**
 	 * Creates the response.
 	 * 
+	 * @param inSymbol
+	 *            the in symbol
 	 * @return the string
 	 * @throws JAXBException
 	 *             the jAXB exception
@@ -153,9 +167,6 @@ public class JAXBRepository {
 
 			final JAXBElement<ResponseType> requestElement = OBJECT_FACTORY.createResponse(responseType);
 
-			final JAXBContext jaxbContext = JAXBContext.newInstance(ObjectFactory.class);
-			final Marshaller marshaller = jaxbContext.createMarshaller();
-			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 			marshaller.marshal(requestElement, stringWriter);
 		} finally {
 			IOUtils.closeQuietly(stringWriter);
@@ -184,9 +195,6 @@ public class JAXBRepository {
 
 			final JAXBElement<ResponseType> requestElement = OBJECT_FACTORY.createResponse(responseType);
 
-			final JAXBContext jaxbContext = JAXBContext.newInstance(ObjectFactory.class);
-			final Marshaller marshaller = jaxbContext.createMarshaller();
-			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 			marshaller.marshal(requestElement, stringWriter);
 		} finally {
 			IOUtils.closeQuietly(stringWriter);
@@ -198,6 +206,12 @@ public class JAXBRepository {
 	/**
 	 * Creates the trade request.
 	 * 
+	 * @param inSymbol
+	 *            the in symbol
+	 * @param inQuantity
+	 *            the in quantity
+	 * @param inBuySellIndicatorTypeEnum
+	 *            the in buy sell indicator type enum
 	 * @return the string
 	 * @throws JAXBException
 	 *             the jAXB exception
@@ -217,9 +231,6 @@ public class JAXBRepository {
 
 			final JAXBElement<RequestType> requestElement = OBJECT_FACTORY.createRequest(requestType);
 
-			final JAXBContext jaxbContext = JAXBContext.newInstance(ObjectFactory.class);
-			final Marshaller marshaller = jaxbContext.createMarshaller();
-			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 			marshaller.marshal(requestElement, stringWriter);
 		} finally {
 			IOUtils.closeQuietly(stringWriter);
@@ -231,6 +242,12 @@ public class JAXBRepository {
 	/**
 	 * Creates the fault response.
 	 * 
+	 * @param inSymbol
+	 *            the in symbol
+	 * @param inQuantity
+	 *            the in quantity
+	 * @param inBuySellIndicatorTypeEnum
+	 *            the in buy sell indicator type enum
 	 * @return the string
 	 * @throws JAXBException
 	 *             the jAXB exception
@@ -252,9 +269,6 @@ public class JAXBRepository {
 
 			final JAXBElement<ResponseType> requestElement = OBJECT_FACTORY.createResponse(responseType);
 
-			final JAXBContext jaxbContext = JAXBContext.newInstance(ObjectFactory.class);
-			final Marshaller marshaller = jaxbContext.createMarshaller();
-			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 			marshaller.marshal(requestElement, stringWriter);
 		} finally {
 			IOUtils.closeQuietly(stringWriter);
