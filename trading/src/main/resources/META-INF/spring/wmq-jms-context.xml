@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="jndiTemplate" class="org.springframework.jndi.JndiTemplate">
+		<property name="environment">
+			<props>
+				<prop key="java.naming.factory.initial">weblogic.jndi.WLInitialContextFactory</prop>
+				<prop key="java.naming.provider.url">t3://localhost:7001 </prop>
+				<prop key="java.naming.security.principal">weblogic</prop>
+				<prop key="java.naming.security.credentials">weblogic123</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="jndiFactoryBean" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName" value="jms/EaiConnectionFactory" />
+		<property name="jndiTemplate" ref="jndiTemplate" />
+		<property name="lookupOnStartup" value="false" />
+		<property name="proxyInterface" value="javax.jms.ConnectionFactory" />
+	</bean>
+
+	<bean id="jndiDestinationResolver"
+		class="org.springframework.jms.support.destination.JndiDestinationResolver">
+		<property name="jndiTemplate" ref="jndiTemplate" />
+	</bean>
+
+	<bean id="jmsConfiguration" class="org.apache.camel.component.jms.JmsConfiguration">
+		<property name="connectionFactory" ref="jndiFactoryBean" />
+		<property name="destinationResolver" ref="jndiDestinationResolver" />
+		<property name="concurrentConsumers" value="5" />
+	</bean>
+
+	<bean id="wmq" class="org.apache.camel.component.jms.JmsComponent">
+		<property name="configuration" ref="jmsConfiguration" />
+	</bean>
+
+
+</beans>

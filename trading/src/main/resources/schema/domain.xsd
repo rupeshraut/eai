@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.dev.com/oxm/domain" xmlns:tns="http://www.dev.com/oxm/domain"
+	elementFormDefault="qualified" xml:lang="en">
+
+	<!-- Include -->
+	<include schemaLocation="quote.xsd"></include>
+	<include schemaLocation="trading.xsd"></include>
+
+	<!-- Request -->
+	<element name="Request" type="tns:RequestType">
+		<annotation>
+			<documentation>Quote Response</documentation>
+		</annotation>
+	</element>
+
+	<complexType name="RequestType">
+		<sequence>
+			<element name="QuoteRequest" type="tns:QuoteRequestType" maxOccurs="1" minOccurs="0">
+				<annotation>
+					<documentation>Quote Request</documentation>
+				</annotation>
+			</element>
+			<element name="TradeRequest" type="tns:TradeRequestType" maxOccurs="1" minOccurs="0">
+				<annotation>
+					<documentation>Trade Request</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+
+	<!-- Response -->
+	<element name="Response" type="tns:ResponseType">
+		<annotation>
+			<documentation>Quote Response</documentation>
+		</annotation>
+	</element>
+
+	<complexType name="ResponseType">
+		<sequence>
+			<element name="QuoteResponse" type="tns:QuoteResponseType" maxOccurs="1" minOccurs="0">
+				<annotation>
+					<documentation>Quote Request</documentation>
+				</annotation>
+			</element>
+			<element name="TradeResponse" type="tns:TradeResponseType" maxOccurs="1" minOccurs="0">
+				<annotation>
+					<documentation>Trade Request</documentation>
+				</annotation>
+			</element>
+			<element name="Fault" type="tns:FaultType" maxOccurs="1" minOccurs="0">
+				<annotation>
+					<documentation>Fault Request</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+
+	<!-- Routing Context -->
+	<element name="RoutingContext" type="tns:RoutingContextType">
+		<annotation>
+			<documentation>Routing Context</documentation>
+		</annotation>
+	</element>
+
+	<complexType name="RoutingContextType">
+		<sequence>
+			<element name="messageId" type="string" />
+			<element ref="tns:timestamp" />
+			<element name="invoker" type="string" />
+		</sequence>
+	</complexType>
+
+
+</schema>

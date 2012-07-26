@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.dev.com/oxm/domain" xmlns:tns="http://www.dev.com/oxm/domain"
+	elementFormDefault="qualified" xml:lang="en">
+
+
+	<!-- Request -->
+	<include schemaLocation="base.xsd" />
+
+	<complexType name="QuoteRequestType">
+		<sequence>
+			<element name="symbol" type="tns:SymbolType" />
+			<element ref="tns:timestamp" />
+		</sequence>
+	</complexType>
+
+	<complexType name="QuoteResponseType">
+		<sequence>
+			<element name="symbol" type="tns:SymbolType" />
+			<element name="price" type="double" maxOccurs="1" />
+			<element ref="tns:timestamp" />
+		</sequence>
+	</complexType>
+
+</schema>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.dev.com/oxm/domain" xmlns:tns="http://www.dev.com/oxm/domain" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	elementFormDefault="qualified" xml:lang="en" jaxb:version="2.0">
+
+	<annotation>
+		<appinfo>
+			<jaxb:globalBindings>
+				<jaxb:javaType name="java.util.Calendar" xmlType="dateTime" parseMethod="javax.xml.bind.DatatypeConverter.parseDateTime" printMethod="javax.xml.bind.DatatypeConverter.printDateTime" />
+			</jaxb:globalBindings>
+		</appinfo>
+	</annotation>
+
+	<simpleType name="buySellIndicatorTypeEnum">
+		<restriction base="string">
+			<enumeration value="BUY" />
+			<enumeration value="SELL" />
+		</restriction>
+	</simpleType>
+
+	<simpleType name="faultTypeEnume">
+		<restriction base="string">
+			<enumeration value="INFO" />
+			<enumeration value="WARNING" />
+			<enumeration value="ERROR" />
+		</restriction>
+	</simpleType>
+
+	<simpleType name="SymbolType">
+		<restriction base="string">
+			<maxLength value="5" />
+			<minLength value="2" />
+		</restriction>
+	</simpleType>
+
+	<simpleType name="codeTypeEnum">
+		<restriction base="string">
+			<enumeration value="A100" />
+			<enumeration value="B102" />
+			<enumeration value="C500" />
+			<enumeration value="D200" />
+		</restriction>
+	</simpleType>
+
+	<complexType name="FaultType">
+		<sequence>
+			<element name="type" type="tns:faultTypeEnume" />
+			<element name="code" type="tns:codeTypeEnum" />
+			<element name="detail" type="string" />
+		</sequence>
+	</complexType>
+
+	<element name="timestamp" type="dateTime">
+
+	</element>
+
+
+</schema>

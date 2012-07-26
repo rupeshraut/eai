@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.dev.com/oxm/domain" xmlns:tns="http://www.dev.com/oxm/domain"
+	elementFormDefault="qualified">
+	<include schemaLocation="base.xsd" />
+
+	<complexType name="TradeRequestType">
+		<annotation>
+			<documentation>Trade Request Type</documentation>
+		</annotation>
+		<sequence>
+			<element name="symbol" type="tns:SymbolType" />
+			<element name="buySellIndicator" type="tns:buySellIndicatorTypeEnum" />
+			<element name="quantity" type="int" />
+			<element ref="tns:timestamp" />
+		</sequence>
+	</complexType>
+
+
+	<complexType name="TradeResponseType">
+		<annotation>
+			<documentation>Trade Response Type</documentation>
+		</annotation>
+		<sequence>
+			<element name="symbol" type="tns:SymbolType" />
+			<element name="buySellIndicator" type="tns:buySellIndicatorTypeEnum" />
+			<element name="quantity" type="int" />
+			<element name="quotePrice" type="double" />
+			<element name="price" type="double" />
+			<element ref="tns:timestamp" />
+		</sequence>
+	</complexType>
+</schema>

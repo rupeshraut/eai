@@ -1,0 +1,6 @@
+/target
+/.settings
+/activemq-data
+/.classpath
+/.project
+/.springBeans
