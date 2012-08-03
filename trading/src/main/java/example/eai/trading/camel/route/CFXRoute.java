@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 /**
  * The Class FTPConsumerRoute.
  */
-@Component
+//@Component
 public class CFXRoute extends SpringRouteBuilder {
 
 	/** The Constant LOGGER. */
