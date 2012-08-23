@@ -28,7 +28,8 @@ public class Main {
 	 *             the exception
 	 */
 	public static void main(String[] args) throws Exception {
-		TradingManager beanImpl = new TradingManager();
+		
+		final TradingManager beanImpl = new TradingManager();
 		final String mbeanName = "example.eai.trading.mbean:type=TradingManagerMBean";
 		final ObjectName objectName = new ObjectName(mbeanName);
 		final MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
