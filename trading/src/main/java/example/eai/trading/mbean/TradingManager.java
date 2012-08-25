@@ -77,7 +77,6 @@ public class TradingManager implements TradingManagerMBean, MBeanRegistration {
 		if (LOGGER.isInfoEnabled()) {
 			LOGGER.info("executing preRegister()");
 		}// if
-		applicationContext = new ClassPathXmlApplicationContext("classpath:META-INF/spring/camel-context.xml");
 		return null;
 	}// preRegister()
 
@@ -89,6 +88,12 @@ public class TradingManager implements TradingManagerMBean, MBeanRegistration {
 	 */
 	@Override
 	public boolean start() {
+
+		if (applicationContext == null) {
+			applicationContext = new ClassPathXmlApplicationContext("classpath:META-INF/spring/camel-context.xml");
+			return true;
+		}// if
+
 		if (!applicationContext.isRunning()) {
 			applicationContext.refresh();
 			applicationContext.start();
