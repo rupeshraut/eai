@@ -110,7 +110,7 @@ public class TradingManager implements TradingManagerMBean, MBeanRegistration {
 	 */
 	@Override
 	public boolean stop() {
-		if (applicationContext.isRunning()) {
+		if (applicationContext != null && applicationContext.isRunning()) {
 			applicationContext.stop();
 			return true;
 		}// if
