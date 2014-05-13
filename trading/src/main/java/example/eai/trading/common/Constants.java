@@ -22,5 +22,8 @@ public interface Constants {
 
 	/** The quote response. */
 	String QUOTE_RESPONSE = "QUOTE_RESPONSE";
+	
+	/** The jms component. */
+	String JMS_COMPONENT = "wmq";
 
 }

@@ -1,17 +1,13 @@
 package example.eai.trading.camel.route;
 
-import java.util.Random;
 
-import org.apache.camel.Exchange;
-import org.apache.camel.Processor;
 import org.apache.camel.spring.SpringRouteBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import example.eai.trading.camel.processor.request.QuoteRequestProducerProcessor;
 import example.eai.trading.common.Constants;
-import example.eai.trading.common.Symbol;
-import example.eai.trading.oxm.repository.JAXBRepository;
 
 /**
  * The Class MessageProducerRoute.
@@ -34,14 +30,8 @@ public class QuoteRequestProducerRoute extends SpringRouteBuilder {
 			LOGGER.info(this.getClass().getName());
 		}// if
 
-		from("timer://quoteRequestTimer?fixedRate=true&period=5000").process(new Processor() {
-			@Override
-			public void process(Exchange exchange) throws Exception {
-				int ordinal = new Random().nextInt(Symbol.values().length);
-				final Symbol symbol = Symbol.values()[ordinal];
-				exchange.getOut().setBody(JAXBRepository.createQuoteRequest(symbol.getCode()));
-			}// process
-		}).setHeader(Constants.REQUEST_TYPE, constant(Constants.QUOTE_REQUEST)).to("wmq:queue:jms/EaiInboundQueue");
+		from("timer://quoteRequestTimer?fixedRate=true&period=5000").process(new QuoteRequestProducerProcessor())
+				.setHeader(Constants.REQUEST_TYPE, constant(Constants.QUOTE_REQUEST)).to("wmq:queue:jms/EaiInboundQueue");
 	}// configure
 
 }// class

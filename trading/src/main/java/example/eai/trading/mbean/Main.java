@@ -2,8 +2,10 @@ package example.eai.trading.mbean;
 
 import java.lang.management.ManagementFactory;
 import java.util.concurrent.TimeUnit;
+
 import javax.management.MBeanServer;
 import javax.management.ObjectName;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

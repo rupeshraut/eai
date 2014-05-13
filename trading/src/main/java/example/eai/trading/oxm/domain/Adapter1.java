@@ -9,6 +9,7 @@
 package example.eai.trading.oxm.domain;
 
 import java.util.Calendar;
+
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
 public class Adapter1
