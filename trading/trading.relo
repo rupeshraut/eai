@@ -1,0 +1,868 @@
+@prefix atxa-rse-eclipse: <http://www.architexa.com/rdf/rse-eclipse#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix atxa-jdt-wkspc: <http://www.architexa.com/rdf/jdt-wkspc#> .
+@prefix atxa-core: <http://www.architexa.com/rdf/core#> .
+@prefix atxa: <http://www.architexa.com/rdf/> .
+@prefix atxa-jdt: <http://www.architexa.com/rdf/jdt#> .
+
+<http://www.architexa.com/rdf/rse-eclipse#trading.relo> a atxa-core:reloFile .
+
+atxa:DetailNode atxa-core:detailLevel "0" .
+
+atxa-core:docRoot atxa-core:browseModel "com.architexa.diagrams.relo.jdt/com.architexa.diagrams.relo.jdt.browse.ClassStrucBrowseModel" ;
+	atxa-core:contains _:node17621k01hx1 .
+
+_:node17621k01hx1 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route> ;
+	atxa-core:posX "34" ;
+	atxa-core:posY "-69" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$QuoteRequestProducerRoute> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$TradeRequestProducerRoute> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$ResponseMessageConsumerRoute> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$RequestMessageConsumerRoute> .
+
+_:node17621k01hx1 atxa-core:contains _:node17621k01hx2 .
+
+_:node17621k01hx2 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$ResponseMessageConsumerRoute> ;
+	atxa-core:posX "40" ;
+	atxa-core:posY "106" ;
+	atxa-core:color "76;;f5;;78" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$ResponseMessageConsumerRoute> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$ResponseMessageConsumerRoute.LOGGER> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$ResponseMessageConsumerRoute.<clinit\>()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$ResponseMessageConsumerRoute.ResponseMessageConsumerRoute()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$ResponseMessageConsumerRoute.configure()> .
+
+_:node17621k01hx2 atxa-core:contains _:node17621k01hx3 .
+
+_:node17621k01hx3 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$ResponseMessageConsumerRoute.<clinit\>()> ;
+	atxa-core:posX "41" ;
+	atxa-core:posY "144" .
+
+_:node17621k01hx2 atxa-core:contains _:node17621k01hx4 .
+
+_:node17621k01hx4 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$ResponseMessageConsumerRoute.configure()> ;
+	atxa-core:posX "41" ;
+	atxa-core:posY "160" .
+
+_:node17621k01hx5 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17621k01hx4 ;
+	rdf:object _:node17621k01hx6 .
+
+_:node17621k01hx7 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17621k01hx4 ;
+	rdf:object _:node17621k01hx8 .
+
+_:node17621k01hx2 atxa-core:contains _:node17621k01hx9 .
+
+_:node17621k01hx9 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$ResponseMessageConsumerRoute.LOGGER> ;
+	atxa-core:posX "41" ;
+	atxa-core:posY "128" .
+
+_:node17621k01hx2 atxa-core:contains _:node17621k01hx10 .
+
+_:node17621k01hx10 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$ResponseMessageConsumerRoute.ResponseMessageConsumerRoute()> ;
+	atxa-core:posX "41" ;
+	atxa-core:posY "176" .
+
+_:node17621k01hx1 atxa-core:contains _:node17621k01hx31 .
+
+_:node17621k01hx31 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$QuoteRequestProducerRoute> ;
+	atxa-core:posX "382" ;
+	atxa-core:posY "139" ;
+	atxa-core:color "76;;f5;;78" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$QuoteRequestProducerRoute> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$QuoteRequestProducerRoute.LOGGER> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$QuoteRequestProducerRoute.<clinit\>()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$QuoteRequestProducerRoute.QuoteRequestProducerRoute()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$QuoteRequestProducerRoute.configure()> .
+
+_:node17621k01hx31 atxa-core:contains _:node17621k01hx32 .
+
+_:node17621k01hx32 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$QuoteRequestProducerRoute.<clinit\>()> ;
+	atxa-core:posX "383" ;
+	atxa-core:posY "177" .
+
+_:node17621k01hx31 atxa-core:contains _:node17621k01hx33 .
+
+_:node17621k01hx33 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$QuoteRequestProducerRoute.configure()> ;
+	atxa-core:posX "383" ;
+	atxa-core:posY "193" .
+
+_:node1761sp580x19981 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17621k01hx33 ;
+	rdf:object _:node1761sp580x23721 .
+
+_:node17621k01hx31 atxa-core:contains _:node17621k01hx34 .
+
+_:node17621k01hx34 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$QuoteRequestProducerRoute.LOGGER> ;
+	atxa-core:posX "383" ;
+	atxa-core:posY "161" .
+
+_:node17621k01hx31 atxa-core:contains _:node17621k01hx35 .
+
+_:node17621k01hx35 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$QuoteRequestProducerRoute.QuoteRequestProducerRoute()> ;
+	atxa-core:posX "383" ;
+	atxa-core:posY "209" .
+
+_:node17621k01hx1 atxa-core:contains _:node17621k01hx11 .
+
+_:node17621k01hx11 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$TradeRequestProducerRoute> ;
+	atxa-core:posX "196" ;
+	atxa-core:posY "-44" ;
+	atxa-core:color "76;;f5;;78" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$TradeRequestProducerRoute> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$TradeRequestProducerRoute.LOGGER> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$TradeRequestProducerRoute.<clinit\>()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$TradeRequestProducerRoute.TradeRequestProducerRoute()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$TradeRequestProducerRoute.configure()> .
+
+_:node17621k01hx11 atxa-core:contains _:node17621k01hx12 .
+
+_:node17621k01hx12 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$TradeRequestProducerRoute.configure()> ;
+	atxa-core:posX "197" ;
+	atxa-core:posY "-6" .
+
+_:node1761sp580x22107 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17621k01hx12 ;
+	rdf:object _:node1761sp580x23722 .
+
+_:node17621k01hx11 atxa-core:contains _:node17621k01hx28 .
+
+_:node17621k01hx28 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$TradeRequestProducerRoute.<clinit\>()> ;
+	atxa-core:posX "197" ;
+	atxa-core:posY "10" .
+
+_:node17621k01hx11 atxa-core:contains _:node17621k01hx29 .
+
+_:node17621k01hx29 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$TradeRequestProducerRoute.TradeRequestProducerRoute()> ;
+	atxa-core:posX "197" ;
+	atxa-core:posY "26" .
+
+_:node17621k01hx11 atxa-core:contains _:node17621k01hx30 .
+
+_:node17621k01hx30 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$TradeRequestProducerRoute.LOGGER> ;
+	atxa-core:posX "197" ;
+	atxa-core:posY "-22" .
+
+_:node17621k01hx1 atxa-core:contains _:node17621k01hx36 .
+
+_:node17621k01hx36 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$RequestMessageConsumerRoute> ;
+	atxa-core:posX "155" ;
+	atxa-core:posY "288" ;
+	atxa-core:color "76;;f5;;78" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$RequestMessageConsumerRoute> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$RequestMessageConsumerRoute.LOGGER> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$RequestMessageConsumerRoute.<clinit\>()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$RequestMessageConsumerRoute.RequestMessageConsumerRoute()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$RequestMessageConsumerRoute.configure()> .
+
+_:node17621k01hx36 atxa-core:contains _:node17621k01hx37 .
+
+_:node17621k01hx37 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$RequestMessageConsumerRoute.<clinit\>()> ;
+	atxa-core:posX "156" ;
+	atxa-core:posY "326" .
+
+_:node17621k01hx36 atxa-core:contains _:node17621k01hx38 .
+
+_:node17621k01hx38 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$RequestMessageConsumerRoute.configure()> ;
+	atxa-core:posX "156" ;
+	atxa-core:posY "342" .
+
+_:node17621k01hx39 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17621k01hx38 ;
+	rdf:object _:node17621k01hx40 .
+
+_:node17621k01hx41 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17621k01hx38 ;
+	rdf:object _:node17621k01hx42 .
+
+_:node17621k01hx36 atxa-core:contains _:node17621k01hx43 .
+
+_:node17621k01hx43 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$RequestMessageConsumerRoute.LOGGER> ;
+	atxa-core:posX "156" ;
+	atxa-core:posY "310" .
+
+_:node17621k01hx36 atxa-core:contains _:node17621k01hx44 .
+
+_:node17621k01hx44 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.route$RequestMessageConsumerRoute.RequestMessageConsumerRoute()> ;
+	atxa-core:posX "156" ;
+	atxa-core:posY "358" .
+
+atxa-core:docRoot atxa-core:contains _:node17621k01hx45 .
+
+_:node17621k01hx45 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common> ;
+	atxa-core:posX "1653" ;
+	atxa-core:posY "-39" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants> .
+
+_:node17621k01hx45 atxa-core:contains _:node17621k01hx46 .
+
+_:node17621k01hx46 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol> ;
+	atxa-core:posX "1659" ;
+	atxa-core:posY "-14" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.values()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.getCode()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.Microsoft> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.getSymbol(String,)> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.getPrice()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.Facebook> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.Google> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.Oracle> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.Yahoo> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.BankOfAmerica> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.JPMorganAndChase> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.WellsFargo> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.Intel> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.code> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.price> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.ENUM$VALUES> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.<clinit\>()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.Symbol(String,int,String,double,)> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.valueOf(String,)> .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx23 .
+
+_:node17621k01hx23 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.getCode()> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "200" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx47 .
+
+_:node17621k01hx47 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.<clinit\>()> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "216" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx48 .
+
+_:node17621k01hx48 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.BankOfAmerica> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "8" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx49 .
+
+_:node17621k01hx49 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.code> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "24" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx50 .
+
+_:node17621k01hx50 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.Facebook> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "40" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx51 .
+
+_:node17621k01hx51 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.getPrice()> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "232" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx52 .
+
+_:node17621k01hx52 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.getSymbol(String,)> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "248" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx53 .
+
+_:node17621k01hx53 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.Google> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "56" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx54 .
+
+_:node17621k01hx54 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.Intel> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "72" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx55 .
+
+_:node17621k01hx55 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.JPMorganAndChase> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "88" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx56 .
+
+_:node17621k01hx56 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.Microsoft> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "104" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx57 .
+
+_:node17621k01hx57 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.Oracle> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "120" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx58 .
+
+_:node17621k01hx58 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.price> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "136" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx59 .
+
+_:node17621k01hx59 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.Symbol(String,int,String,double,)> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "264" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx60 .
+
+_:node17621k01hx60 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.valueOf(String,)> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "280" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx61 .
+
+_:node17621k01hx61 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.ENUM$VALUES> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "152" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx27 .
+
+_:node17621k01hx27 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.values()> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "296" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx62 .
+
+_:node17621k01hx62 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.WellsFargo> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "168" .
+
+_:node17621k01hx46 atxa-core:contains _:node17621k01hx63 .
+
+_:node17621k01hx63 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Symbol.Yahoo> ;
+	atxa-core:posX "1660" ;
+	atxa-core:posY "184" .
+
+_:node17621k01hx45 atxa-core:contains _:node17621k01hx64 .
+
+_:node17621k01hx64 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants> ;
+	atxa-core:posX "2050" ;
+	atxa-core:posY "86" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.REQUEST_TYPE> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.RESPONSE_TYPE> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.TRADE_REQUEST> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.TRADE_RESPONSE> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.QUOTE_REQUEST> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.QUOTE_RESPONSE> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.JMS_COMPONENT> .
+
+_:node17621k01hx64 atxa-core:contains _:node17621k01hx65 .
+
+_:node17621k01hx65 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.JMS_COMPONENT> ;
+	atxa-core:posX "2051" ;
+	atxa-core:posY "108" .
+
+_:node17621k01hx64 atxa-core:contains _:node17621k01hx66 .
+
+_:node17621k01hx66 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.QUOTE_REQUEST> ;
+	atxa-core:posX "2051" ;
+	atxa-core:posY "124" .
+
+_:node17621k01hx64 atxa-core:contains _:node17621k01hx67 .
+
+_:node17621k01hx67 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.QUOTE_RESPONSE> ;
+	atxa-core:posX "2051" ;
+	atxa-core:posY "140" .
+
+_:node17621k01hx64 atxa-core:contains _:node17621k01hx68 .
+
+_:node17621k01hx68 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.REQUEST_TYPE> ;
+	atxa-core:posX "2051" ;
+	atxa-core:posY "156" .
+
+_:node17621k01hx64 atxa-core:contains _:node17621k01hx69 .
+
+_:node17621k01hx69 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.RESPONSE_TYPE> ;
+	atxa-core:posX "2051" ;
+	atxa-core:posY "172" .
+
+_:node17621k01hx64 atxa-core:contains _:node17621k01hx70 .
+
+_:node17621k01hx70 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.TRADE_REQUEST> ;
+	atxa-core:posX "2051" ;
+	atxa-core:posY "188" .
+
+_:node17621k01hx64 atxa-core:contains _:node17621k01hx71 .
+
+_:node17621k01hx71 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.TRADE_RESPONSE> ;
+	atxa-core:posX "2051" ;
+	atxa-core:posY "204" .
+
+atxa-core:docRoot atxa-core:contains _:node17621k01hx72 .
+
+_:node17621k01hx72 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository> ;
+	atxa-core:posX "1649" ;
+	atxa-core:posY "344" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository> .
+
+_:node17621k01hx72 atxa-core:contains _:node17621k01hx73 .
+
+_:node17621k01hx73 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository> ;
+	atxa-core:posX "1655" ;
+	atxa-core:posY "369" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.createQuoteRequest(String,)> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.createTradeRequest(String,int,BuySellIndicatorTypeEnum,)> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.createQuoteResponse(String,)> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.LOGGER> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.OBJECT_FACTORY> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.jaxbContext> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.marshaller> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.<clinit\>()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.JAXBRepository()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.main(String[],)> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.createRoutingContext()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.createTradeResponse(String,int,BuySellIndicatorTypeEnum,)> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.createFaultResponse()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.getCalendar()> .
+
+_:node17621k01hx73 atxa-core:contains _:node17621k01hx25 .
+
+_:node17621k01hx25 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.createTradeRequest(String,int,BuySellIndicatorTypeEnum,)> ;
+	atxa-core:posX "1656" ;
+	atxa-core:posY "455" .
+
+_:node17621k01hx73 atxa-core:contains _:node17621k01hx74 .
+
+_:node17621k01hx74 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.<clinit\>()> ;
+	atxa-core:posX "1656" ;
+	atxa-core:posY "471" .
+
+_:node17621k01hx73 atxa-core:contains _:node17621k01hx75 .
+
+_:node17621k01hx75 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.createFaultResponse()> ;
+	atxa-core:posX "1656" ;
+	atxa-core:posY "487" .
+
+_:node17621k01hx73 atxa-core:contains _:node17621k01hx76 .
+
+_:node17621k01hx76 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.createQuoteRequest(String,)> ;
+	atxa-core:posX "1656" ;
+	atxa-core:posY "503" .
+
+_:node17621k01hx73 atxa-core:contains _:node17621k01hx77 .
+
+_:node17621k01hx77 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.createQuoteResponse(String,)> ;
+	atxa-core:posX "1656" ;
+	atxa-core:posY "519" .
+
+_:node17621k01hx73 atxa-core:contains _:node17621k01hx78 .
+
+_:node17621k01hx78 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.createRoutingContext()> ;
+	atxa-core:posX "1656" ;
+	atxa-core:posY "535" .
+
+_:node17621k01hx73 atxa-core:contains _:node17621k01hx79 .
+
+_:node17621k01hx79 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.createTradeResponse(String,int,BuySellIndicatorTypeEnum,)> ;
+	atxa-core:posX "1656" ;
+	atxa-core:posY "551" .
+
+_:node17621k01hx73 atxa-core:contains _:node17621k01hx80 .
+
+_:node17621k01hx80 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.getCalendar()> ;
+	atxa-core:posX "1656" ;
+	atxa-core:posY "567" .
+
+_:node17621k01hx73 atxa-core:contains _:node17621k01hx81 .
+
+_:node17621k01hx81 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.jaxbContext> ;
+	atxa-core:posX "1656" ;
+	atxa-core:posY "391" .
+
+_:node17621k01hx73 atxa-core:contains _:node17621k01hx82 .
+
+_:node17621k01hx82 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.JAXBRepository()> ;
+	atxa-core:posX "1656" ;
+	atxa-core:posY "583" .
+
+_:node17621k01hx73 atxa-core:contains _:node17621k01hx83 .
+
+_:node17621k01hx83 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.LOGGER> ;
+	atxa-core:posX "1656" ;
+	atxa-core:posY "407" .
+
+_:node17621k01hx73 atxa-core:contains _:node17621k01hx84 .
+
+_:node17621k01hx84 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.main(String[],)> ;
+	atxa-core:posX "1656" ;
+	atxa-core:posY "599" .
+
+_:node17621k01hx73 atxa-core:contains _:node17621k01hx85 .
+
+_:node17621k01hx85 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.marshaller> ;
+	atxa-core:posX "1656" ;
+	atxa-core:posY "423" .
+
+_:node17621k01hx73 atxa-core:contains _:node17621k01hx86 .
+
+_:node17621k01hx86 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.repository$JAXBRepository.OBJECT_FACTORY> ;
+	atxa-core:posX "1656" ;
+	atxa-core:posY "439" .
+
+atxa-core:docRoot atxa-core:contains _:node17621k01hx87 .
+
+_:node17621k01hx87 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request> ;
+	atxa-core:posX "688" ;
+	atxa-core:posY "35" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProcessor> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProcessor> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProducerProcessor> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProducerProcessor> .
+
+_:node17621k01hx87 atxa-core:contains _:node17621k01hx88 .
+
+_:node17621k01hx88 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProcessor> ;
+	atxa-core:posX "694" ;
+	atxa-core:posY "66" ;
+	atxa-core:color "74;;aa;;e8" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProcessor> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProcessor.QuoteRequestProcessor()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProcessor.LOGGER> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProcessor.<clinit\>()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProcessor.process(Exchange,)> .
+
+_:node17621k01hx89 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node17621k01hx88 ;
+	rdf:object _:node17621k01hx17 ;
+	atxa-core:bendpoint _:node1761sp580x30577 .
+
+_:node1761sp580x30577 atxa-core:bpLocation "797,30" ;
+	atxa-core:bpIndex "0" .
+
+_:node17621k01hx89 atxa-core:bendpoint _:node1761sp580x30578 .
+
+_:node1761sp580x30578 atxa-core:bpLocation "1090,30" ;
+	atxa-core:bpIndex "1" .
+
+_:node17621k01hx88 atxa-core:contains _:node17621k01hx92 .
+
+_:node17621k01hx92 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProcessor.<clinit\>()> ;
+	atxa-core:posX "695" ;
+	atxa-core:posY "104" .
+
+_:node17621k01hx88 atxa-core:contains _:node17621k01hx93 .
+
+_:node17621k01hx93 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProcessor.LOGGER> ;
+	atxa-core:posX "695" ;
+	atxa-core:posY "88" .
+
+_:node17621k01hx88 atxa-core:contains _:node17621k01hx94 .
+
+_:node17621k01hx94 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProcessor.process(Exchange,)> ;
+	atxa-core:posX "695" ;
+	atxa-core:posY "120" .
+
+_:node17621k01hx88 atxa-core:contains _:node17621k01hx40 .
+
+_:node17621k01hx40 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProcessor.QuoteRequestProcessor()> ;
+	atxa-core:posX "695" ;
+	atxa-core:posY "136" .
+
+_:node17621k01hx87 atxa-core:contains _:node17621k01hx95 .
+
+_:node17621k01hx95 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProcessor> ;
+	atxa-core:posX "863" ;
+	atxa-core:posY "200" ;
+	atxa-core:color "74;;aa;;e8" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProcessor> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProcessor.TradeRequestProcessor()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProcessor.LOGGER> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProcessor.<clinit\>()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProcessor.process(Exchange,)> .
+
+_:node17621k01hx96 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node17621k01hx95 ;
+	rdf:object _:node17621k01hx17 ;
+	atxa-core:bendpoint _:node1761sp580x30579 .
+
+_:node1761sp580x30579 atxa-core:bpLocation "965,30" ;
+	atxa-core:bpIndex "0" .
+
+_:node17621k01hx96 atxa-core:bendpoint _:node1761sp580x30580 .
+
+_:node1761sp580x30580 atxa-core:bpLocation "1090,30" ;
+	atxa-core:bpIndex "1" .
+
+_:node17621k01hx95 atxa-core:contains _:node17621k01hx99 .
+
+_:node17621k01hx99 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProcessor.process(Exchange,)> ;
+	atxa-core:posX "864" ;
+	atxa-core:posY "238" .
+
+_:node17621k01hx100 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17621k01hx99 ;
+	rdf:object _:node17621k01hx79 .
+
+_:node17621k01hx95 atxa-core:contains _:node17621k01hx101 .
+
+_:node17621k01hx101 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProcessor.<clinit\>()> ;
+	atxa-core:posX "864" ;
+	atxa-core:posY "254" .
+
+_:node17621k01hx95 atxa-core:contains _:node17621k01hx102 .
+
+_:node17621k01hx102 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProcessor.LOGGER> ;
+	atxa-core:posX "864" ;
+	atxa-core:posY "222" .
+
+_:node17621k01hx95 atxa-core:contains _:node17621k01hx42 .
+
+_:node17621k01hx42 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProcessor.TradeRequestProcessor()> ;
+	atxa-core:posX "864" ;
+	atxa-core:posY "270" .
+
+_:node17621k01hx87 atxa-core:contains _:node1761sp580x23729 .
+
+_:node1761sp580x23729 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProducerProcessor> ;
+	atxa-core:posX "1293" ;
+	atxa-core:posY "60" ;
+	atxa-core:color "74;;aa;;e8" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProducerProcessor> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProducerProcessor.TradeRequestProducerProcessor()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProducerProcessor.process(Exchange,)> .
+
+_:node1761sp580x23729 atxa-core:contains _:node1761sp580x23722 .
+
+_:node1761sp580x23722 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProducerProcessor.TradeRequestProducerProcessor()> ;
+	atxa-core:posX "1294" ;
+	atxa-core:posY "82" .
+
+_:node1761sp580x23729 atxa-core:contains _:node1761sp580x23730 .
+
+_:node1761sp580x23730 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProducerProcessor.process(Exchange,)> ;
+	atxa-core:posX "1294" ;
+	atxa-core:posY "98" .
+
+_:node1761sp580x22218 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1761sp580x23730 ;
+	rdf:object _:node17621k01hx23 .
+
+_:node1761sp580x22239 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1761sp580x23730 ;
+	rdf:object _:node17621k01hx27 .
+
+_:node1761sp580x22260 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1761sp580x23730 ;
+	rdf:object _:node17621k01hx25 .
+
+_:node17621k01hx87 atxa-core:contains _:node1761sp580x23725 .
+
+_:node1761sp580x23725 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProducerProcessor> ;
+	atxa-core:posX "1103" ;
+	atxa-core:posY "148" ;
+	atxa-core:color "74;;aa;;e8" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProducerProcessor> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProducerProcessor.QuoteRequestProducerProcessor()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProducerProcessor.process(Exchange,)> .
+
+_:node1761sp580x20092 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node1761sp580x23725 ;
+	rdf:object _:node17621k01hx17 ;
+	atxa-core:bendpoint _:node1761sp580x30581 .
+
+_:node1761sp580x30581 atxa-core:bpLocation "1230,30" ;
+	atxa-core:bpIndex "0" .
+
+_:node1761sp580x20092 atxa-core:bendpoint _:node1761sp580x30582 .
+
+_:node1761sp580x30582 atxa-core:bpLocation "1090,30" ;
+	atxa-core:bpIndex "1" .
+
+_:node1761sp580x23725 atxa-core:contains _:node1761sp580x23721 .
+
+_:node1761sp580x23721 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProducerProcessor.QuoteRequestProducerProcessor()> ;
+	atxa-core:posX "1104" ;
+	atxa-core:posY "170" .
+
+_:node1761sp580x23725 atxa-core:contains _:node1761sp580x23728 .
+
+_:node1761sp580x23728 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$QuoteRequestProducerProcessor.process(Exchange,)> ;
+	atxa-core:posX "1104" ;
+	atxa-core:posY "186" .
+
+_:node1761sp580x21797 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1761sp580x23728 ;
+	rdf:object _:node17621k01hx23 .
+
+_:node1761sp580x21822 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1761sp580x23728 ;
+	rdf:object _:node17621k01hx27 .
+
+_:node1761sp580x21847 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1761sp580x23728 ;
+	rdf:object _:node17621k01hx76 .
+
+atxa-core:docRoot atxa-core:contains _:node17621k01hx103 .
+
+_:node17621k01hx103 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response> ;
+	atxa-core:posX "684" ;
+	atxa-core:posY "356" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$TradeResponseProcessor> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$QuoteResponseProcessor> .
+
+_:node17621k01hx103 atxa-core:contains _:node17621k01hx111 .
+
+_:node17621k01hx111 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$QuoteResponseProcessor> ;
+	atxa-core:posX "690" ;
+	atxa-core:posY "381" ;
+	atxa-core:color "74;;aa;;e8" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$QuoteResponseProcessor> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$QuoteResponseProcessor.QuoteResponseProcessor()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$QuoteResponseProcessor.LOGGER> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$QuoteResponseProcessor.<clinit\>()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$QuoteResponseProcessor.process(Exchange,)> .
+
+_:node17621k01hx112 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node17621k01hx111 ;
+	rdf:object _:node17621k01hx17 ;
+	atxa-core:bendpoint _:node1761sp580x30583 .
+
+_:node1761sp580x30583 atxa-core:bpLocation "797,30" ;
+	atxa-core:bpIndex "0" .
+
+_:node17621k01hx112 atxa-core:bendpoint _:node1761sp580x30584 .
+
+_:node1761sp580x30584 atxa-core:bpLocation "1090,30" ;
+	atxa-core:bpIndex "1" .
+
+_:node17621k01hx111 atxa-core:contains _:node17621k01hx115 .
+
+_:node17621k01hx115 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$QuoteResponseProcessor.<clinit\>()> ;
+	atxa-core:posX "691" ;
+	atxa-core:posY "419" .
+
+_:node17621k01hx111 atxa-core:contains _:node17621k01hx116 .
+
+_:node17621k01hx116 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$QuoteResponseProcessor.LOGGER> ;
+	atxa-core:posX "691" ;
+	atxa-core:posY "403" .
+
+_:node17621k01hx111 atxa-core:contains _:node17621k01hx117 .
+
+_:node17621k01hx117 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$QuoteResponseProcessor.process(Exchange,)> ;
+	atxa-core:posX "691" ;
+	atxa-core:posY "435" .
+
+_:node17621k01hx111 atxa-core:contains _:node17621k01hx8 .
+
+_:node17621k01hx8 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$QuoteResponseProcessor.QuoteResponseProcessor()> ;
+	atxa-core:posX "691" ;
+	atxa-core:posY "451" .
+
+_:node17621k01hx103 atxa-core:contains _:node17621k01hx104 .
+
+_:node17621k01hx104 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$TradeResponseProcessor> ;
+	atxa-core:posX "968" ;
+	atxa-core:posY "387" ;
+	atxa-core:color "74;;aa;;e8" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$TradeResponseProcessor> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$TradeResponseProcessor.LOGGER> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$TradeResponseProcessor.<clinit\>()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$TradeResponseProcessor.TradeResponseProcessor()> , <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$TradeResponseProcessor.process(Exchange,)> .
+
+_:node17621k01hx105 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node17621k01hx104 ;
+	rdf:object _:node17621k01hx17 ;
+	atxa-core:bendpoint _:node1761sp580x30585 .
+
+_:node1761sp580x30585 atxa-core:bpLocation "1074,30" ;
+	atxa-core:bpIndex "0" .
+
+_:node17621k01hx105 atxa-core:bendpoint _:node1761sp580x30586 .
+
+_:node1761sp580x30586 atxa-core:bpLocation "1090,30" ;
+	atxa-core:bpIndex "1" .
+
+_:node17621k01hx104 atxa-core:contains _:node17621k01hx108 .
+
+_:node17621k01hx108 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$TradeResponseProcessor.<clinit\>()> ;
+	atxa-core:posX "969" ;
+	atxa-core:posY "425" .
+
+_:node17621k01hx104 atxa-core:contains _:node17621k01hx109 .
+
+_:node17621k01hx109 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$TradeResponseProcessor.LOGGER> ;
+	atxa-core:posX "969" ;
+	atxa-core:posY "409" .
+
+_:node17621k01hx104 atxa-core:contains _:node17621k01hx110 .
+
+_:node17621k01hx110 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$TradeResponseProcessor.process(Exchange,)> ;
+	atxa-core:posX "969" ;
+	atxa-core:posY "441" .
+
+_:node17621k01hx104 atxa-core:contains _:node17621k01hx6 .
+
+_:node17621k01hx6 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.response$TradeResponseProcessor.TradeResponseProcessor()> ;
+	atxa-core:posX "969" ;
+	atxa-core:posY "457" .
+
+atxa-core:docRoot atxa-core:contains _:node17621k01hx118 .
+
+_:node17621k01hx118 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.apache.camel> ;
+	atxa-core:posX "1036" ;
+	atxa-core:posY "-53" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#org.apache.camel> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#org.apache.camel$Processor> .
+
+_:node17621k01hx118 atxa-core:contains _:node17621k01hx17 .
+
+_:node17621k01hx17 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.apache.camel$Processor> ;
+	atxa-core:posX "1042" ;
+	atxa-core:posY "-28" ;
+	atxa-core:color "74;;aa;;e8" .
+

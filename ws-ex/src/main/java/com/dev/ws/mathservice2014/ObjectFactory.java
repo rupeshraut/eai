@@ -30,19 +30,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AddResponse }
-     * 
-     */
-    public AddResponse createAddResponse() {
-        return new AddResponse();
-    }
-
-    /**
      * Create an instance of {@link Add }
      * 
      */
     public Add createAdd() {
         return new Add();
+    }
+
+    /**
+     * Create an instance of {@link AddResponse }
+     * 
+     */
+    public AddResponse createAddResponse() {
+        return new AddResponse();
     }
 
 }

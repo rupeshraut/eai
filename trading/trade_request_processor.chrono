@@ -1,0 +1,294 @@
+@prefix atxa-rse-eclipse: <http://www.architexa.com/rdf/rse-eclipse#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix atxa-jdt-wkspc: <http://www.architexa.com/rdf/jdt-wkspc#> .
+@prefix atxa-core: <http://www.architexa.com/rdf/core#> .
+@prefix atxa: <http://www.architexa.com/rdf/> .
+@prefix atxa-jdt: <http://www.architexa.com/rdf/jdt#> .
+
+<http://www.architexa.com/rdf/rse-eclipse#trade_unrequest_unprocessor.chrono> a atxa-core:chronoFile .
+
+atxa:DetailNode atxa-core:detailLevel "0" .
+
+<http://www.architexa.com/rdf/rse-eclipse#trade_unrequest_unprocessor.chrono> atxa-core:contains _:node1761sp580x13356 .
+
+_:node1761sp580x13356 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProcessor> ;
+	atxa-jdt:index "0" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node1761sp580x13357 .
+
+_:node1761sp580x13357 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.camel.processor.request$TradeRequestProcessor.process(Exchange,)> ;
+	atxa-jdt:index "0" ;
+	atxa-core:contains _:node1761sp580x13358 .
+
+_:node1761sp580x13358 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.apache.camel$Message.getBody()> ;
+	atxa-jdt:index "0" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#org.apache.camel$Message.getBody()> atxa-core:link _:node1761sp580x13359 .
+
+_:node1761sp580x13360 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1761sp580x13358 ;
+	rdf:object _:node1761sp580x13359 ;
+	atxa-core:name "exchange.getIn().getBody()" .
+
+_:node1761sp580x13357 atxa-core:contains _:node1761sp580x13361 .
+
+_:node1761sp580x13361 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.domain$RequestType.getTradeRequest()> ;
+	atxa-jdt:index "1" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.domain$RequestType.getTradeRequest()> atxa-core:link _:node1761sp580x13362 .
+
+_:node1761sp580x13363 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1761sp580x13361 ;
+	rdf:object _:node1761sp580x13362 ;
+	atxa-core:name "getTradeRequest()" .
+
+_:node1761sp580x13357 atxa-core:contains _:node1761sp580x13364 .
+
+_:node1761sp580x13364 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.slf4j$Logger.info(String,Object,)> ;
+	atxa-jdt:index "2" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#org.slf4j$Logger.info(String,Object,)> atxa-core:link _:node1761sp580x13365 .
+
+_:node1761sp580x13366 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1761sp580x13364 ;
+	rdf:object _:node1761sp580x13365 ;
+	atxa-core:name "info(\"Symbol {}\", getSymbol())" .
+
+_:node1761sp580x13357 atxa-core:contains _:node1761sp580x13367 .
+
+_:node1761sp580x13367 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.slf4j$Logger.info(String,Object,)> ;
+	atxa-jdt:index "3" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#org.slf4j$Logger.info(String,Object,)> atxa-core:link _:node1761sp580x13368 .
+
+_:node1761sp580x13369 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1761sp580x13367 ;
+	rdf:object _:node1761sp580x13368 ;
+	atxa-core:name "info(\"Buy/Sell Indicator {}\", getBuySellIndicator())" .
+
+_:node1761sp580x13357 atxa-core:contains _:node1761sp580x13370 .
+
+_:node1761sp580x13370 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.slf4j$Logger.info(String,Object,)> ;
+	atxa-jdt:index "4" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#org.slf4j$Logger.info(String,Object,)> atxa-core:link _:node1761sp580x13371 .
+
+_:node1761sp580x13372 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1761sp580x13370 ;
+	rdf:object _:node1761sp580x13371 ;
+	atxa-core:name "info(\"Quantity {}\", getQuantity())" .
+
+_:node1761sp580x13357 atxa-core:contains _:node1761sp580x13373 .
+
+_:node1761sp580x13373 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.slf4j$Logger.info(String,Object,)> ;
+	atxa-jdt:index "5" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#org.slf4j$Logger.info(String,Object,)> atxa-core:link _:node1761sp580x13374 .
+
+_:node1761sp580x13375 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1761sp580x13373 ;
+	rdf:object _:node1761sp580x13374 ;
+	atxa-core:name "info(\"Timestamp {}\", getTimestamp())" .
+
+_:node1761sp580x13357 atxa-core:contains _:node1761sp580x13376 .
+
+_:node1761sp580x13376 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.RESPONSE_TYPE> ;
+	atxa-jdt:index "6" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.RESPONSE_TYPE> atxa-core:link _:node1761sp580x13377 .
+
+_:node1761sp580x13378 a atxa-core:link ;
+	atxa-core:model atxa-jdt:fieldRead ;
+	rdf:subject _:node1761sp580x13376 ;
+	rdf:object _:node1761sp580x13377 ;
+	atxa-core:name "Constants.RESPONSE_TYPE" .
+
+_:node1761sp580x13357 atxa-core:contains _:node1761sp580x13379 .
+
+_:node1761sp580x13379 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.TRADE_RESPONSE> ;
+	atxa-jdt:index "7" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.TRADE_RESPONSE> atxa-core:link _:node1761sp580x13380 .
+
+_:node1761sp580x13381 a atxa-core:link ;
+	atxa-core:model atxa-jdt:fieldRead ;
+	rdf:subject _:node1761sp580x13379 ;
+	rdf:object _:node1761sp580x13380 ;
+	atxa-core:name "Constants.TRADE_RESPONSE" .
+
+_:node1761sp580x13357 atxa-core:contains _:node1761sp580x13382 .
+
+_:node1761sp580x13382 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.apache.camel$Message.setHeader(String,Object,)> ;
+	atxa-jdt:index "8" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#org.apache.camel$Message.setHeader(String,Object,)> atxa-core:link _:node1761sp580x13383 .
+
+_:node1761sp580x13384 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1761sp580x13382 ;
+	rdf:object _:node1761sp580x13383 ;
+	atxa-core:name "exchange.getOut().setHeader(Constants.RESPONSE_TYPE, Constants.TRADE_RESPONSE)" .
+
+_:node1761sp580x13357 atxa-core:contains _:node1761sp580x13385 .
+
+_:node1761sp580x13385 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.apache.camel$Message.setBody(Object,)> ;
+	atxa-jdt:index "9" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#org.apache.camel$Message.setBody(Object,)> atxa-core:link _:node1761sp580x13386 .
+
+_:node1761sp580x13387 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node1761sp580x13385 ;
+	rdf:object _:node1761sp580x13386 ;
+	atxa-core:name "exchange.getOut().setBody(createTradeResponse(getSymbol(), getQuantity(), getBuySellIndicator()))" .
+
+<http://www.architexa.com/rdf/rse-eclipse#trade_unrequest_unprocessor.chrono> atxa-core:contains _:node1761sp580x5529 .
+
+_:node1761sp580x5529 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.domain$RequestType> ;
+	atxa-jdt:index "1" ;
+	atxa-core:instanceName "requestType" ;
+	atxa-core:contains _:node1761sp580x13362 .
+
+_:node1761sp580x13362 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.oxm.domain$RequestType.getTradeRequest()> ;
+	atxa-jdt:index "0" .
+
+_:node1761sp580x13388 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1761sp580x13362 ;
+	rdf:object _:node1761sp580x13361 ;
+	atxa-core:name "TradeRequestType" .
+
+<http://www.architexa.com/rdf/rse-eclipse#trade_unrequest_unprocessor.chrono> atxa-core:contains _:node1761sp580x5530 .
+
+_:node1761sp580x5530 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.slf4j$Logger> ;
+	atxa-jdt:index "2" ;
+	atxa-core:instanceName "LOGGER" ;
+	atxa-core:contains _:node1761sp580x13365 .
+
+_:node1761sp580x13365 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.slf4j$Logger.info(String,Object,)> ;
+	atxa-jdt:index "0" .
+
+_:node1761sp580x13389 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1761sp580x13365 ;
+	rdf:object _:node1761sp580x13364 ;
+	atxa-core:name "void" .
+
+_:node1761sp580x5530 atxa-core:contains _:node1761sp580x13368 .
+
+_:node1761sp580x13368 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.slf4j$Logger.info(String,Object,)> ;
+	atxa-jdt:index "1" .
+
+_:node1761sp580x13390 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1761sp580x13368 ;
+	rdf:object _:node1761sp580x13367 ;
+	atxa-core:name "void" .
+
+_:node1761sp580x5530 atxa-core:contains _:node1761sp580x13371 .
+
+_:node1761sp580x13371 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.slf4j$Logger.info(String,Object,)> ;
+	atxa-jdt:index "2" .
+
+_:node1761sp580x13391 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1761sp580x13371 ;
+	rdf:object _:node1761sp580x13370 ;
+	atxa-core:name "void" .
+
+_:node1761sp580x5530 atxa-core:contains _:node1761sp580x13374 .
+
+_:node1761sp580x13374 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.slf4j$Logger.info(String,Object,)> ;
+	atxa-jdt:index "3" .
+
+_:node1761sp580x13392 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1761sp580x13374 ;
+	rdf:object _:node1761sp580x13373 ;
+	atxa-core:name "void" .
+
+<http://www.architexa.com/rdf/rse-eclipse#trade_unrequest_unprocessor.chrono> atxa-core:contains _:node1761sp580x13393 .
+
+_:node1761sp580x13393 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.apache.camel$Message> ;
+	atxa-jdt:index "3" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node1761sp580x13359 .
+
+_:node1761sp580x13359 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.apache.camel$Message.getBody()> ;
+	atxa-jdt:index "0" .
+
+_:node1761sp580x13394 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1761sp580x13359 ;
+	rdf:object _:node1761sp580x13358 ;
+	atxa-core:name "java/lang/Object" .
+
+_:node1761sp580x13393 atxa-core:contains _:node1761sp580x13383 .
+
+_:node1761sp580x13383 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.apache.camel$Message.setHeader(String,Object,)> ;
+	atxa-jdt:index "1" .
+
+_:node1761sp580x13395 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1761sp580x13383 ;
+	rdf:object _:node1761sp580x13382 ;
+	atxa-core:name "void" .
+
+_:node1761sp580x13393 atxa-core:contains _:node1761sp580x13386 .
+
+_:node1761sp580x13386 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#org.apache.camel$Message.setBody(Object,)> ;
+	atxa-jdt:index "2" .
+
+_:node1761sp580x13396 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node1761sp580x13386 ;
+	rdf:object _:node1761sp580x13385 ;
+	atxa-core:name "void" .
+
+<http://www.architexa.com/rdf/rse-eclipse#trade_unrequest_unprocessor.chrono> atxa-core:contains _:node1761sp580x5531 .
+
+_:node1761sp580x5531 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants> ;
+	atxa-jdt:index "4" ;
+	atxa-core:instanceName "Constants" ;
+	atxa-core:contains _:node1761sp580x13377 .
+
+_:node1761sp580x13377 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.RESPONSE_TYPE> ;
+	atxa-jdt:index "0" .
+
+_:node1761sp580x5531 atxa-core:contains _:node1761sp580x13380 .
+
+_:node1761sp580x13380 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#example.eai.trading.common$Constants.TRADE_RESPONSE> ;
+	atxa-jdt:index "1" .
+

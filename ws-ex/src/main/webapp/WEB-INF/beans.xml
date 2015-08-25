@@ -9,7 +9,9 @@
 		http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
 		http://cxf.apache.org/transports/http/configuration http://cxf.apache.org/schemas/wsdl/http-conf.xsd">
 
-	<bean id="mathService2014Impl" class="com.dev.ws.mathservice2014.impl.MathService2014Impl"></bean>
+	<bean id="mathService2014Impl" class="com.dev.ws.mathservice2014.impl.MathService2014Impl">
+            <constructor-arg index="0" ref="processingStrategyFactory"/>
+        </bean>
 	<jaxws:endpoint id="mathService2014" implementor="#mathService2014Impl" address="/MathService2014" />
 
 </beans>

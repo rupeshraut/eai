@@ -1,0 +1,199 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.usb.cm.fx</groupId>
+	<artifactId>sample-web</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<properties>
+		<spring.version>3.2.5.RELEASE</spring.version>
+		<aop.version>1.7.4</aop.version>
+		<spring.security.version>3.1.4.RELEASE</spring.security.version>
+	</properties>
+	<dependencies>
+		<!-- Provided dependencies -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.core</artifactId>
+			<scope>provided</scope>
+			<version>4.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.compendium</artifactId>
+			<scope>provided</scope>
+			<version>4.3.1</version>
+		</dependency>
+		<!-- Jar -->
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>jstl-api</artifactId>
+			<version>1.2</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.10</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.8.0</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+						<manifest>
+							<addClasspath>true</addClasspath>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<version>2.5.0</version>
+				<extensions>true</extensions>
+				<executions>
+					<execution>
+						<id>bundle-manifest</id>
+						<phase>process-classes</phase>
+						<goals>
+							<goal>manifest</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<supportedProjectTypes>
+						<supportedProjectType>war</supportedProjectType>
+					</supportedProjectTypes>
+					<instructions>
+						<_wab>src/main/webapp</_wab>
+						<Web-ContextPath>sample-web</Web-ContextPath>
+						<Export-Package>!*</Export-Package>
+						<Import-Package>
+							<!-- Just import EVERYTHING from Apache standard JSTL impl. -->
+							org.apache.taglibs.standard; version="[1.2.0,2)",
+							org.apache.taglibs.standard.extra.spath; version="[1.2.0,2)",
+							org.apache.taglibs.standard.functions;
+							version="[1.2.0,2)",
+							org.apache.taglibs.standard.lang.jstl; version="[1.2.0,2)",
+							org.apache.taglibs.standard.lang.jstl.parser; version="[1.2.0,2)",
+							org.apache.taglibs.standard.lang.jstl.test; version="[1.2.0,2)",
+							org.apache.taglibs.standard.lang.jstl.test.beans; version="[1.2.0,2)",
+							org.apache.taglibs.standard.lang.support; version="[1.2.0,2)",
+							org.apache.taglibs.standard.resources; version="[1.2.0,2)",
+							org.apache.taglibs.standard.tag.common.core; version="[1.2.0,2)",
+							org.apache.taglibs.standard.tag.common.fmt; version="[1.2.0,2)",
+							org.apache.taglibs.standard.tag.common.sql; version="[1.2.0,2)",
+							org.apache.taglibs.standard.tag.common.xml; version="[1.2.0,2)",
+							org.apache.taglibs.standard.tag.el.core; version="[1.2.0,2)",
+							org.apache.taglibs.standard.tag.el.fmt; version="[1.2.0,2)",
+							org.apache.taglibs.standard.tag.el.sql; version="[1.2.0,2)",
+							org.apache.taglibs.standard.tag.el.xml; version="[1.2.0,2)",
+							org.apache.taglibs.standard.tag.rt.core; version="[1.2.0,2)",
+							org.apache.taglibs.standard.tag.rt.fmt; version="[1.2.0,2)",
+							org.apache.taglibs.standard.tag.rt.sql; version="[1.2.0,2)",
+							org.apache.taglibs.standard.tag.rt.xml; version="[1.2.0,2)",
+							org.apache.taglibs.standard.tei;
+							version="[1.2.0,2)",
+							org.apache.taglibs.standard.tlv; version="[1.2.0,2)",
+							org.springframework.beans.factory.config,
+							org.springframework.web.context.support,
+							org.springframework.context.config,
+							org.springframework.stereotype,
+							org.springframework.web.servlet.config,
+							org.springframework.web.bind.annotation,
+							org.springframework.web.servlet,
+							org.springframework.web.servlet.view,
+							*
+						</Import-Package>
+						<Bundle-ClassPath>WEB-INF/classes,.</Bundle-ClassPath>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<description>Build a standard web project for hosting in Apache Karaf</description>
+
+
+</project>
