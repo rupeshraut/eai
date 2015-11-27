@@ -16,7 +16,7 @@
 	<context:annotation-config/>
 	<mvc:annotation-driven />
     <context:component-scan base-package="com.usb.cm.fx.web"  />
-    <mvc:resources location="/resources/" mapping="/static/**" />
+    <mvc:resources location="/resources/" mapping="/resources/**" />
     <!-- <mvc:view-controller path="/" view-name="login"/> -->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
