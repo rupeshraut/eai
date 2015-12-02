@@ -21,7 +21,9 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	<!-- feature:stop bundle-feature -->
+	<!-- feature:repo-refresh file:C:/Users/rupesh/.m2/repository/kbase/osgi/bundle-feature/0.0.1-SNAPSHOT/bundle-feature-0.0.1-SNAPSHOT-features.xml -->
+	<!-- feature:start bundle-feature -->
 	<dependencies>
 		<dependency>
 			<groupId>kbase.osgi</groupId>
