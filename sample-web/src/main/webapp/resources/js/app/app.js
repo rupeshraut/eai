@@ -8,7 +8,7 @@
 	}, {
 		name : 'kirti Raut',
 		age : 28,
-		show : true
+		show : false
 	}, ]
 
 	app.controller('StoreCtrl', function() {

@@ -23,7 +23,11 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>webapp</servlet-name>
-		<url-pattern>/</url-pattern>
+		<url-pattern>*.htm</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>webapp</servlet-name>
+		<url-pattern>*.json</url-pattern>
 	</servlet-mapping>
 
 	<listener>
