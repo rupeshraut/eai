@@ -7,7 +7,7 @@
 	<properties>
 		<spring.version>4.1.6.RELEASE</spring.version>
 		<aop.version>1.7.4</aop.version>
-		<spring.security.version>3.1.4.RELEASE</spring.security.version>
+		<spring.security.version>5.2.10.RELEASE</spring.security.version>
 	</properties>
 	<dependencies>
 		<!-- Provided dependencies -->
